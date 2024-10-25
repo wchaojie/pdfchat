@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended" // 必须在最后
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // 让 eslint-plugin-react 自动检测 react 版本
+    }
+  },
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error", // 检查 Hooks 的使用规则
+    "react-hooks/exhaustive-deps": "warn", // 检查依赖项的声明
+    "prefer-arrow-callback": "off",
+    "prefer-destructuring": "warn",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/ban-ts-comment": "warn" // @ts-注解警告
+  }
+}
