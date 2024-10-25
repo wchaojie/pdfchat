@@ -1,8 +1,8 @@
 export const testHighlights = {
-  "http://localhost:3000/demo.pdf": [
+  "https://arxiv.org/pdf/1708.08021": [
     {
       content: {
-        text: " Type Checking for JavaScript",
+        text: "Type Checking for JavaScript",
       },
       position: {
         boundingRect: {
@@ -314,4 +314,4 @@ export const testHighlights = {
       id: "29668244118038056",
     },
   ],
-};
+}

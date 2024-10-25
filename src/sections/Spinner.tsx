@@ -1,4 +1,4 @@
-import "@/style/Spinner.css";
+import "@/style/Spinner.css"
 
 export function Spinner() {
   return (
@@ -24,5 +24,5 @@ export function Spinner() {
         <div className="sk-circle12 sk-circle" />
       </div>
     </div>
-  );
+  )
 }
